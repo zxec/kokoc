@@ -1,0 +1,76 @@
+﻿.button {
+    font-family: "Roboto Condensed";
+    color: #fff;
+    border-radius: 6px;
+    background: #000;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+    z-index: 1000;
+    transition: 0.5s;
+  }
+  
+  .button:hover {
+    color: #E43225;
+  } 
+  
+  .button--small {
+    padding: 0 1.3rem;
+    height: 40px;
+    font-size: 18px;
+  }
+    
+  .button--big {
+    padding: 0 2.5rem;
+    height: 60px;
+    font-size: 24px;
+  }
+  
+  .button--orange {
+      background: #FF5900;
+      padding: 0 2.5rem;
+      height: 60px;
+      font-size: 24px;
+  }
+  
+  .button--orange:hover {
+      color:#000;
+  }
+  
+  .button--orange:before {
+      left: 99.6%;
+      top: 3.8%;
+      border-top: 28px solid transparent;
+      border-left: 15px solid #FF5900;
+      border-bottom: 28px solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+  }
+  
+  .button--small:before {
+    left: 99.5%;
+    top: 4%;
+    border-top: 18px solid transparent;
+    border-left: 10px solid #000;
+    border-bottom: 18px solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+  }
+  
+  .button--big:before {
+    left: 99.6%;
+    top: 3.8%;
+    border-top: 28px solid transparent;
+    border-left: 15px solid #000;
+    border-bottom: 28px solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+  }

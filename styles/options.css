@@ -1,0 +1,135 @@
+.options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 80rem;
+  padding-top: 6.25rem;
+  padding-bottom: 5.8rem;
+  min-height: 6.25rem;
+}
+
+.left-sidebar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 39.375rem;
+  padding-left: 9rem;
+}
+
+.left-sidebar__subtitle {
+  margin-top: 3.375rem;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 0em;
+  text-align: left;
+  max-width: 30.375rem;
+  padding: 0rem 5rem 0rem 0.625rem;
+}
+
+.left-sidebar img {
+  max-width: 30.375rem;
+  max-height: 18.125rem;
+}
+
+.right-sidebar {
+  position: relative;
+  padding: 5.5rem 4rem 0rem 7.4375rem;
+  max-width: 40.625rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-sidebar h3 {
+  text-align: center;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 2.75rem;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.item img {
+  max-width: 7.5rem;
+}
+
+.note {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 8.1875rem;
+  height: 2.5rem;
+  background: url(../img/situations/label.svg);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3125rem;
+  letter-spacing: 0em;
+  cursor: pointer;
+}
+
+.left-sidebar .note {
+  top: 1.25rem;
+  left: 3.4375rem;
+}
+
+.right-sidebar .note {
+  top: 1.25rem;
+}
+
+@media screen and (max-width: 769px) {
+  .left-sidebar img {
+    max-width: 22.5714rem;
+    max-height: 220.7143rem;
+  }
+  .left-sidebar__subtitle {
+    max-width: 22.5714rem;
+    padding: 0rem;
+  }
+
+  .left-sidebar .note {
+    left: 0;
+  }
+  .right-sidebar .note {
+    left: 0;
+  }
+  .right-sidebar {
+    padding: 6.2857rem 0rem 0rem 3.5rem;
+    max-width: 32.8571rem;
+  }
+  .nums img {
+    max-width: 5.7143rem;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .left-sidebar img {
+    max-width: 24.6667rem;
+  }
+  .left-sidebar__subtitle {
+    max-width: 24.6667rem;
+    padding: 0rem;
+  }
+  .left-sidebar {
+    padding-left: 0.8333rem;
+  }
+  .right-sidebar {
+    padding: 88px 0rem 0rem 0rem;
+    width: 24.6667rem;
+  }
+  .nums img {
+    max-width: 5rem;
+  }
+}

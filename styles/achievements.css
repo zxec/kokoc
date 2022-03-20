@@ -1,0 +1,194 @@
+.achievements {
+    width: 100%;
+    padding-bottom: 2.7rem;
+    padding-top: 4.6rem;
+}
+
+.container {
+    position: relative;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    width: 40%;
+}
+
+.achievements__title {
+    margin-bottom: 7rem;
+    max-width: 40%;
+}
+
+.bookmark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/achievements/Group.svg) repeat-y;
+    max-width: 97px;
+    width: 100%;
+    min-height: 40px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #fff;;
+    cursor: pointer;
+}
+
+.section-logo {
+    background: url(../img/achievements/h_m.svg) no-repeat;
+    min-width: 20%;
+    height: 60px;
+}
+
+.achievements__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.achievements .container .achievements__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.4rem 5rem 2rem 5rem;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.article-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.article-text {
+    line-height: 24px;
+    width: 85%;
+    margin-bottom: 4.2rem;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-between;
+}
+
+.statistics__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.statistics__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.marker {
+    background: url(../img/achievements/marker.svg) no-repeat;
+    height: 34px;
+    min-width: 34px;
+    margin-right: 1rem;
+}
+
+.statistics__number {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-right: .5rem;
+}
+
+.statistics-text {
+    font-weight: 500;
+    max-width: 30%;
+    margin-right: 2rem;
+}
+
+.package {
+    position: absolute;
+    background: url(../img/achievements/paket_mish.svg) no-repeat;
+    height: 478px;
+    width: 383px;
+    top: -13%;
+    right: 12%;
+}
+
+.achievements__bookmark {
+    position: absolute;
+    top: -5%;
+    left: 3%;
+}
+
+.select-button {
+    max-width: 72px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select-button__option {
+    width: .5rem;
+    height: .5rem;
+    background-color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.select-button__option:focus {
+    outline: 2px solid #FDBF0F;
+    background-color: #FDBF0F;
+}
+
+
+@media screen and (max-width: 768px) {
+    .achievements .container .achievements__content {
+        padding: 1.7rem 1rem 1.5rem 1rem;
+    }
+
+    .statistics__number {
+        font-size: 2rem;
+    }
+
+    .article-text {
+        width: 100%;
+    }
+
+    .container {
+        padding: 2.2rem 1rem 1rem 1.5rem;
+    }
+
+    .package {
+        display: none;
+    }
+
+    .achievements__title {
+        max-width: 100%;    
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section-logo {
+        display: none;
+    }
+
+    .marker {
+        display: none;
+    }
+
+    .section-title {
+        width: 100%;
+    }
+    
+    .achievements__title {
+        margin-bottom: 3rem; 
+    }
+
+    .article-title {
+        margin-top: 1rem;
+    }
+}

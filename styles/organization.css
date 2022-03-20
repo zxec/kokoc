@@ -1,0 +1,194 @@
+.organization {
+  background-color: #f5f5f5;
+  margin-top: 106px;
+}
+
+.org-container {
+  max-width: 1280px;
+  min-height: 765px;
+  padding: 70px 53px 0 53px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.org-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 4.5rem;
+}
+
+.big-target {
+  width: 100%;
+}
+
+.big-target img {
+  width: 100%;
+  max-width: 520px;
+}
+
+.big-target__content {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.big-target__circle {
+  background: url(../img/organization/chislo.svg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 62px;
+  max-width: 62px;
+  min-height: 62px;
+  font-family: "Roboto Condensed";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.big-target__item .big-target__circle {
+  color: white;
+}
+
+.big-target__item {
+  position: absolute;
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  width: 30vw;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.big-target__item:nth-child(1) {
+  top: 61%;
+  right: 66%;
+  text-align: right;
+  max-width: 295px;
+}
+
+.big-target__item:nth-child(2) {
+  top: 14%;
+  right: 65%;
+  text-align: right;
+  max-width: 359px;
+}
+
+.big-target__item:nth-child(3) {
+  top: -3.5%;
+  left: 55.3%;
+  text-align: left;
+  max-width: 326px;
+}
+
+.big-target__item:nth-child(4) {
+  top: 36%;
+  left: 69.6%;
+  text-align: left;
+  max-width: 345px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .big-target__item:nth-child(1) {
+    left: 0;
+    text-align: left;
+    max-width: 400px;
+  }
+  .big-target__item:nth-child(1) .circle {
+    order: 1;
+  }
+  .big-target__item:nth-child(1) p {
+    order: 2;
+  }
+
+  .big-target__item:nth-child(2) {
+    left: 0;
+    text-align: left;
+    max-width: 400px;
+  }
+
+  .big-target__item:nth-child(2) .circle {
+    order: 1;
+  }
+  .big-target__item:nth-child(2) p {
+    order: 2;
+  }
+
+  .big-target__item:nth-child(3) {
+    text-align: left;
+    left: 0;
+    max-width: 400px;
+  }
+
+  .big-target__item:nth-child(4) {
+    text-align: left;
+    left: 0;
+    max-width: 400px;
+  }
+
+  .big-target__img {
+    display: none;
+  }
+
+  .big-target__content {
+    flex-wrap: wrap ;
+    gap: 3rem;
+    padding: 3rem 0 4.5rem 0;
+  }
+
+  .organization {
+    background-color: #f5f5f5;
+    z-index: 1;
+    margin-top: 101px;
+  }
+  
+  .org-container {
+    position: relative;
+    max-width: 1280px;
+    min-height: 0;
+    padding: 70px 53px 0 53px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .big-target {
+    z-index: 2;
+    width: 100%;
+  }
+
+  .big-target__item {
+    position: static;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .org-container {
+    padding: 70px 13px 0px 13px;
+  }
+}

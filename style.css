@@ -1,0 +1,53 @@
+@import url("styles/normalize.css");
+@import url("styles/button.css");
+@import url("styles/header.css");
+@import url("styles/options.css");
+@import url("styles/advantage.css");
+@import url("styles/achievements.css");
+@import url("styles/starting.css");
+@import url("styles/self-entry.css");
+@import url("styles/organization.css");
+@import url("styles/feedback.css");
+@import url("styles/footer.css");
+@import url("styles/modal.css");
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  width: 100%;
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
